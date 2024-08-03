@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>BrainSpark</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-nav">
+        <p class="logo">
+          <img src="img/logo.svg" width="105" height="100" alt="Логотип BrainSpark">
+        </p>
+        <nav class="nav">
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a href="#">Команда</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Миссия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Партнёры</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Библиотека</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Блог</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Мероприятия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Конкурсы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <span></span>
+        </div>
+        <a class="signin" href="#">
+          <img src="img/user.svg" width="44" height="44" alt="Кабинет пользователя">
+        </a>
+      </header>
+    </div>
+    <main>
+      <section class="hero">
+        <img src="img/main-photo.jpg" alt="BrainSpark"> 
+        <h1>BrainSpark</h1>
+        <h2>Акселератор Студенческих Стартапов</h2> 
+      </section> 
+      <div class="container">
+        <section class="blog">
+          <article class="blog-article blog-article-1 short">
+            <div class="blog-article-content">
+              <h3>Сессия мозгового штурма</h3>
+              <p>
+                В самом сердце кипящего инновациями пространства, где мечты превращаются в реальность, – в Центре Инноваций — царит атмосфера креатива и коллаборации.
+                <span id="dots"></span>
+                <div id="more">
+                  <p>Представьте себе: просторное, залитое светом помещение, где на столах разложены разноцветные стикеры, маркёры и ноутбуки. В воздухе витает аромат свежезаваренного кофе, а по комнате разносятся оживлённые голоса.</p>
+                  <p class="blog-article-description-last">Здесь, под чутким руководством опытных менторов, амбициозные стартаперы генерируют идеи, которые завтра могут изменить мир.</p>
+                </div>
+              </p>
+              <button onclick='readmore()' id="btn" class="more">дальше</button>
+            </div>
+            <img class="blog-article-img" src="img/event-01.jpg" width="610" height="260" alt="Девушки на сессии мозгового штурма">
+          </article>
+          <article class="blog-article blog-article-2 short">
+            <div class="blog-article-content">
+              <h3>Презентация проекта на встрече в Инкубаторе Стартапов</h3>
+              <p>
+                Приготовьтесь к погружению в мир амбиций, энтузиазма и инноваций! Вас ждёт захватывающее путешествие в мир стартапов, где идеи превращаются в реальность.
+                <span id="dots-2"></span>
+                <div id="more-2">
+                  <p class="blog-article-description-last">Станьте свидетелем волнительных моментов презентации, где молодые предприниматели с пылом и вдохновением представляют свои проекты перед ведущими экспертами и инвесторами.</p>
+                </div>
+              </p>
+              <button onclick='readmore2()' id="btn-2" class="more">дальше</button>
+            </div>
+            <img class="blog-article-img" src="img/event-02.jpg" width="610" height="260" alt="Мужчина презентует проект">
+          </article> 
+          <article class="blog-article short">
+            <div class="blog-article-content">
+              <h3>Мероприятие для нетворкинга</h3>
+              <p>
+                Приглашаем вас на динамичное и продуктивное мероприятие, созданное для нетворкинга! Здесь вы сможете расширить круг своих профессиональных контактов, завести полезные знакомства и найти новые возможности для развития.
+                <span id="dots-3"></span>
+                <div id="more-3">
+                  <p class="blog-article-description-last">В атмосфере непринуждённого общения вы сможете пообщаться с единомышленниками, узнать о новых проектах и вакансиях, а также найти партнёров и инвесторов для своих идей.</p>
+                </div>
+              </p>
+              <button onclick='readmore3()' id="btn-3" class="more">дальше</button>
+            </div>
+            <img class="blog-article-img" src="img/event-03.jpg" width="610" height="260" alt="Девушка проводит мероприятие">
+          </article> 
+        </section>
+      </div>
+      <section class="news">
+        <h2>СОБЫТИЯ</h2>
+        <h4 class="slogan">От идеи до инновации: путь молодых предпринимателей в стартап-инкубаторе</h4>
+        <article class="post-author">
+          <img class="post-author-img" src="img/avatar.jpg" width="80" height="80" alt="Екатерина Смирнова">
+          <div class="post-meta">
+            <a href="#">Екатерина Смирнова</a>
+            <p>координатор стартап-инкубатора и эксперт в области инновационного предпринимательства</p>
+          </div>
+        </article>
+        <p class="quote-1">“В мире, где инновации движут прогрессом, студенческие стартапы играют ключевую роль. Наш стартап-инкубатор для студентов стал колыбелью для новаторских идей и предпринимательских проектов.”</p>
+        <article class="post">
+          <figure class="post-img">
+            <img src="img/figure.jpg" width="836" height="300" alt="Мужчина в студенческом стартап-инкубаторе">
+            <figcaption>Успешный молодой предприниматель в студенческом стартап-инкубаторе</figcaption>
+          </figure>
+        </article>
+        <p class="description">Стартап-инкубатор для студентов — это не просто пространство, это сообщество, где рождаются и реализуются идеи, изменяющие мир. Мы создаём будущее, и каждый студент может стать его частью.</p>
+        <h3>«Не бойтесь пробовать новое! В студенческом стартап-инкубаторе вам помогут сделать первые шаги в мир предпринимательства»</h3>
+        <div class="assets">
+          <h4>Стартап-инкубатор предлагает не только ресурсы, но и среду для роста и развития молодых компаний:</h4>
+          <ul>
+            <li>Мастер-классы и семинары: обучение ведётся успешными предпринимателями и экспертами.</li>
+            <li>Сетевое взаимодействие: постоянное общение с единомышленниками и профессионалами отрасли.</li>
+            <li>Доступ к ресурсам: необходимые инструменты и технологии для разработки и тестирования продуктов.</li>
+          </ul>
+        </div>
+        <div class="story">
+          <h4>Истории успеха: примеры для подражания</h4>
+          <p>Многие студенческие стартапы, начавшиеся в нашем инкубаторе, достигли значительных успехов. Их пути вдохновляют и мотивируют новое поколение предпринимателей.</p>
+        </div>
+        <div class="basic">
+          <h4>Основы успеха: как мы работаем</h4>
+          <p>От идеи до рыночного запуска, наш инкубатор поддерживает стартапы на каждом шагу. Мы помогаем преодолевать препятствия и находить оптимальные решения для роста бизнеса.</p>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2>ГАЛЕРЕЯ</h2>
+        <div class="slider">
+          <img class="active-photo" src="img/card_img01.jpg" alt="">
+          <ul class="preview-list">
+            <li class="slider-preview-item">
+              <a class="active" href="img/card_img01.jpg">
+                <img src="img/gallery-photo-1.jpg" alt="">
+              </a>
+            </li>
+            <li class="slider-preview-item">
+              <a href="img/card_img02.jpg">
+                <img src="img/gallery-photo-2.jpg" alt="">
+              </a>
+            </li>
+            <li class="slider-preview-item">
+              <a href="img/card_img03.jpg">
+                <img src="img/gallery-photo-3.jpg" alt="">
+              </a>
+            </li>
+            <li class="slider-preview-item">
+              <a href="img/card_img04.jpg">
+                <img src="img/gallery-photo-4.jpg" alt="">
+              </a>
+            </li>
+            <li class="slider-preview-item">
+              <a href="img/card_img05.jpg">
+                <img src="img/gallery-photo-5.jpg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container">
+        <section class="residents">
+          <h2>НАШИ РЕЗИДЕНТЫ</h2>
+          <div class="residents-cards">
+            <ul class="cards">
+              <li class="card">
+                <h3 class="card-title">GreenTech</h3>
+                <figure class="card-img">
+                  <img src="img/resident-01.jpg" alt="Очистка воды">
+                  <figcaption>Революция в очистке воды</figcaption>
+                </figure>
+                <div class="residents-link">
+                  <p>Ссылка:</p>
+                  <a href="">greentechrenewables.com</a>
+                </div>
+                <ul class="card-description">
+                  <li><ins>Описание:</ins> GreenTech - стартап, который разработал инновационную технологию очистки воды. Технология позволяет очищать воду от любых загрязнений, делая её чистой и безопасной для питья.</li>
+                  <li><ins>Команда:</ins> Команда GreenTech состоит из молодых инженеров и учёных.</li>
+                  <li><ins>Достижения:</ins> GreenTech уже привлёк 1 млн $ инвестиций и выиграл несколько международных конкурсов.</li>
+                </ul>
+              </li>
+              <li class="card">
+                <h3 class="card-title">ArtTech</h3>
+                <figure class="card-img">
+                  <img src="img/resident-05.jpg" alt="Искусство">
+                  <figcaption>Искусство будущего</figcaption>
+                </figure>
+                <div class="residents-link">
+                  <p>Ссылка:</p>
+                  <a href="">arttechfoundation.org</a>
+                </div>
+                <ul class="card-description">
+                  <li><ins>Описание:</ins> ArtTech - стартап, который создаёт новые формы искусства с помощью искусственного интеллекта.</li>
+                  <li><ins>Команда:</ins> Команда ArtTech состоит из художников, программистов и дизайнеров.</li>
+                  <li><ins>Достижения:</ins> ArtTech уже участвовал в нескольких выставках и получил несколько наград.</li>
+                </ul>
+              </li>
+              <li class="card card-3">
+                <h3 class="card-title">FinTech</h3>
+                <figure class="card-img">
+                  <img src="img/resident-04.jpg" alt="Блокчейн">
+                  <figcaption>Революция в очистке воды</figcaption>
+                </figure>
+                <div class="residents-link">
+                  <p>Ссылка:</p>
+                  <a href="">fintech.com</a>
+                </div>
+                <ul class="card-description">
+                  <li><ins>Описание:</ins> FinTech разрабатывает блокчейн-решения для бизнеса. Решения компании позволяют сделать бизнес более прозрачным, безопасным и эффективным.</li>
+                  <li><ins>Команда:</ins> Команда FinTech состоит из разработчиков и специалистов в области блокчейн-технологий.</li>
+                  <li><ins>Достижения:</ins> FinTech уже сотрудничает с крупными компаниями.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="cards">
+              <li class="card">
+                <h3 class="card-title">MedTech</h3>
+                <figure class="card-img">
+                  <img src="img/resident-02.jpg" alt="Лечение">
+                  <figcaption>Новые методы лечения</figcaption>
+                </figure>
+                <div class="residents-link">
+                  <p>Ссылка:</p>
+                  <a href="">advamed.org</a>
+                </div>
+                <ul class="card-description">
+                  <li><ins>Описание:</ins> MedTech - стартап, который разрабатывает новые методы лечения рака.</li>
+                  <li><ins>Команда:</ins> Команда MedTech состоит из врачей и учёных, которые работают над поиском эффективных методов лечения рака.</li>
+                  <li><ins>Достижения:</ins> MedTech уже получил патент на свою технологию и сейчас проводит клинические испытания.</li>
+                </ul>
+              </li>
+              <li class="card">
+                <h3 class="card-title">EduTech</h3>
+                <figure class="card-img">
+                  <img src="img/resident-03.jpg" alt="Образование">
+                  <figcaption>Персональное образование для каждого</figcaption>
+                </figure>
+                <div class="residents-link">
+                  <p>Ссылка:</p>
+                  <a href="">edutech.com</a>
+                </div>
+                <ul class="card-description">
+                  <li><ins>Описание:</ins> EduTech - это стартап, который разработал платформу для персонализированного обучения. Платформа позволяет каждому ученику учиться в своём темпе и по своему индивидуальному плану.</li>
+                  <li><ins>Команда:</ins> Команда EduTech состоит из опытных педагогов и разработчиков, которые увлечены образованием.</li>
+                  <li><ins>Достижения:</ins> EduTech уже используется в нескольких школах и университетах.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="contacts">
+        <img class="contacts-img" src="img/map.png" alt="Карта с адресом">
+        <div class="contacts-content">
+          <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+          <ul class="contact-items">
+            <li class="contact-item contact-item-1">
+              <h3>Адрес:</h3>
+              <address>Москва, Красноармейская 10</address>
+            </li>
+            <li class="contact-item contact-item-2">
+              <h3>Телефон:</h3>
+              <a href="tel:+7622620563">+7 010 030-00-00</a>
+            </li>
+            <li class="contact-item">
+              <h3>Мы в социальных сетях:</h3>
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/VK.svg" alt="VK" width="32" height="32">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/Telegram.svg" alt="Telegram" width="32" height="32">
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#">
+                    <img src="img/Frame.svg" alt="Frame" width="32" height="32">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="container-footer">
+      <footer class="main-footer">
+        <p class="logo-footer">
+          <img src="img/logo-footer.svg" alt="Логотип BrainSpark">
+        </p>
+        <div>
+          <ul class="footer-navigation-topics">
+            <li class="footer-navigation-topic">
+              <h2>Наша компания</h2>
+              <ul class="footer-navigation">
+                <li class="footer-navigation-item">
+                  <a href="#">О нас</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>          
+            </li>
+            <li class="footer-navigation-topic">
+              <h2>Документы</h2>
+              <ul class="footer-navigation">
+                <li class="footer-navigation-item">
+                  <a href="#">Правовые документы</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-navigation-topic">
+              <h2>Сотрудничество</h2>
+              <ul class="footer-navigation">
+                <li class="footer-navigation-item">
+                  <a href="#">Вакансии</a>
+                </li>
+                <li class="footer-navigation-item">
+                  <a href="#">Обратная связь</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="copyright">© 2024 Все права защищены</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
